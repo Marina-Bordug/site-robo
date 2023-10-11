@@ -1,0 +1,152 @@
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:300,300italic,regular,italic,500,500italic,700,700italic);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+.link-a {
+    font-family: Ubuntu, Arial;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 2.5rem;
+    /* padding-top: 22px; */
+    /* padding-bottom: 22px; */
+    font-weight: bold;
+    position: relative;
+    transition: all ease 0.3s;
+    border-bottom: 2px dashed rgb(54, 54, 54);
+}
+.link-a:hover {
+    color: #F6871F;
+    border-bottom: 2px dashed #fff;
+}
+
+.active::after {
+    position: absolute;
+    content:"";
+    background: #F6871F;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    /* margin-left: 10px; */
+    display: inline-block;
+    /* vertical-align: middle; */
+    left: -25px;
+    top: 5px;
+    z-index: 3;
+}
+
+nav {
+    background-color: rgb(54, 54, 54);
+    display: flex;
+    justify-content: space-around;
+    height: 10vh;
+    align-items: center;
+}
+
+.main-page {
+    background-color: #F3FFDB;
+    height: 90vh;
+    background-repeat: no-repeat;
+    block-size: contain;
+    display: flex;
+    padding-top: 20px;
+    justify-content: space-around;
+}
+
+h1 {
+    margin: 0px;
+}
+
+
+.section-l {
+    max-width: 43%;
+}
+.section-r {
+    display: flex;
+    flex-direction: column;
+    max-width: 40%;
+    justify-content: center;
+
+}
+
+.for-thl {
+    color: #F6871F;
+    font-family: Ubuntu;
+    font-weight: bold;
+    font-size: 2rem;
+    margin-top: 3%;
+    margin-bottom: 10%;
+}
+
+.for-thl::after {
+    content: "";
+    position: absolute;
+    background-color: #25273A;
+    height: 0.5%;
+    width: 29%;
+    display: flex;
+    bottom: 35%;
+}
+
+h1 {
+    color: #25273A;
+    font-family: Ubuntu;
+    font-weight: bold;
+    font-size: 6rem;
+    word-wrap: break-word;
+}
+
+.robot {
+    width: 100%;
+    /* height: 490px; */
+}
+
+.start {
+    text-decoration: none;
+    position: relative;
+    font-size: 4rem;
+    font-family: Ubuntu;
+    font-weight: bold;
+    color: #FFF;
+    background-color: #F6871F;
+    padding-left: 10%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-right: 14%;
+    border-radius: 60px;
+    align-self: flex-start;
+    text-transform: uppercase;
+    /* width: 90%; */
+    box-shadow: 0px 0px 0px 0px #ae3f20;
+    transition: all ease 0.3s;
+}
+
+.start::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    background-image: url(../img/arrow.png);
+    width: 25px;
+    height: 20px;
+    /* right: ; */
+    /* bottom: ; */
+    top: calc(50% - 10px);
+    right: 30px;
+    background-size: cover;
+}
+
+.start:hover {
+    box-shadow: 15px 12px 0px 0px #ae3f20;
+}
+
+@media screen and ( max-width: 960px) {
+    html {
+        font-size: 8px;
+    }
+}
