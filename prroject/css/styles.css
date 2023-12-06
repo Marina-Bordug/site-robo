@@ -150,3 +150,112 @@ h1 {
         font-size: 8px;
     }
 }
+
+.topics {
+    background-color: #F6871F;
+    /* list-style-type: none; */
+    height: 90vh;
+    width: 30%;
+    /* max-width: ; */
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+}
+
+#scrollbar1::-webkit-scrollbar {
+    width: 12px;
+}
+
+#scrollbar1::-webkit-scrollbar-track {
+    border-radius: 8px;
+    background-color: #F6871F;
+    border: 1px solid #F6871F;
+}
+
+#scrollbar1::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background-clip: content-box;
+    background-color: #ae3f20;
+}
+
+.topic {
+    text-decoration: none;
+    font-family: Ubuntu, Arial;
+    color: #FFF;
+    font-weight: bold;
+    font-size: 2rem;
+    padding: 15px;
+    padding-left: 5%;
+    word-break: normal;
+    overflow-wrap: break-word;
+    transition: all ease 0.3s;
+}
+
+/* .topic:hover {
+    background-color: #ae3f20;
+
+} */
+
+.main-page-1 {
+    background-color: #F3FFDB;
+    background-repeat: no-repeat;
+    block-size: contain;
+    display: flex;
+}
+
+.simple-text {
+    color: #25273A;
+    font-family: Ubuntu;
+    font-size: 1.8rem;
+    word-wrap: break-word;
+    padding-top: 15px;
+    padding-left: 15px;
+}
+
+.sheme {
+    width: 30%;
+    padding-left: 15px;
+    padding-top: 15px;
+}
+
+.main-page-2 {
+    background-color: #F3FFDB;
+    height: 90vh;
+    block-size: contain;
+    width: 100%;
+}
+
+.h1-another {
+    color: #FFF;
+    font-family: Ubuntu;
+    font-weight: bold;
+    font-size: 4rem;
+    word-wrap: break-word;
+    background-color: #ae3f20;
+    padding: 10px;
+}
+
+.topic-content {
+    width: 70%;
+}
+
+.small-topic {
+    font-size: 1.8rem;
+    line-height: 25px;
+    text-decoration: none;
+    font-family: Ubuntu, Arial;
+    color: #FFF;
+    /* font-weight: bold; */
+    word-break: normal;
+    overflow-wrap: break-word;
+}
+
+.color-change {
+    padding-right: 31%;
+    padding-left: 15%;
+    transition: all ease 0.3s;
+}
+
+.color-change:hover {
+    background-color: #ae3f20;
+}
